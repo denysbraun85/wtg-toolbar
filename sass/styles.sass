@@ -1,0 +1,318 @@
+@import reset
+
+.bg-green
+  width: 14px
+  height: 14px
+  border-radius: 50%
+  background-color: #05DAB6
+  margin-left: 8px
+.bg-yellow
+  width: 14px
+  height: 14px
+  border-radius: 50%
+  background-color: #FFD600
+  margin-left: 8px
+.bg-orange
+  width: 14px
+  height: 14px
+  border-radius: 50%
+  background-color: #FF8819
+  margin-left: 8px
+.bg-blue
+  width: 14px
+  height: 14px
+  border-radius: 50%
+  background-color: #3666FA
+  margin-left: 8px
+.bg-red
+  width: 14px
+  height: 14px
+  border-radius: 50%
+  background-color: #FF4E4E
+  margin-left: 8px
+
+
+.wtg-toolbar
+  display: flex
+  align-items: center
+  height: 40px
+  background: #FFFFFF
+  box-shadow: 0 4px 16px rgba(138, 138, 138, 0.15)
+  &__logo
+    display: flex
+    justify-content: center
+    width: 150px
+    min-width: 150px
+    img
+      max-width: 50px
+      width: 100%
+  &__content
+    display: flex
+    width: 100%
+    height: 100%
+  &__link-building-block
+    display: flex
+    width: 50%
+  &__developers-block
+    display: flex
+    width: 50%
+  &__label
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 140px
+    min-width: 140px
+    height: 100%
+    background: rgba(43, 102, 250, 0.3)
+    font-family: 'Source Sans Pro', sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    letter-spacing: 0.02em
+    text-transform: uppercase
+    color: #FFFFFF
+    z-index: 3
+    &:before
+      position: absolute
+      content: ''
+      right: -6px
+      top: 50%
+      width: 14px
+      height: 14px
+      border-radius: 2px
+      transform: translateY(-50%) rotate(45deg)
+      background: #C0D2FE
+      z-index: 1
+  &__option-block
+    display: flex
+    flex-wrap: wrap
+    justify-content: flex-start
+    overflow: hidden
+    width: 100%
+    &.preloader
+      position: relative
+      z-index: 2
+      &:before
+        position: absolute
+        content: ''
+        width: 100%
+        height: 100%
+        background-color: #fff
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        z-index: 3
+      &:after
+        position: absolute
+        content: ''
+        width: 94%
+        height: 6px
+        background-color: #DADCE0
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        z-index: 5
+  &__settings
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 140px
+    min-width: 140px
+  &__btn
+    padding: 0
+    border: none
+    line-height: 0
+    height: auto
+    box-shadow: none
+    outline: none
+    background-color: transparent
+    &:focus
+      box-shadow: none
+      outline: none
+    &:hover
+      svg
+        path
+          fill: #909090 !important
+  &__icon
+    width: 24px
+    path
+      transition: fill 0.2s
+  &__item
+    display: flex
+    align-items: center
+    justify-content: center
+    min-width: 70px
+    max-width: 85px
+    height: 40px
+    width: 100%
+    border-right: 1px solid #DADCE0
+    &:last-child
+      border-right: none
+    &--server-response
+      max-width: 125px
+      min-width: 125px
+      width: 125px
+      justify-content: space-around
+      padding: 0 10px
+      .server-status
+        font-family: 'Source Sans Pro', sans-serif
+        font-style: normal
+        font-weight: 600
+        font-size: 14px
+        letter-spacing: 0.02em
+        text-transform: uppercase
+        color: #FFFFFF
+        padding: 3px 5px
+        border-radius: 2px
+        &.ok
+          background: #05DAB6
+        &.error
+          background: #FF4E4E
+    &--btn
+      max-width: 50px
+      min-width: auto
+  &__state
+    font-family: 'Source Sans Pro', sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    letter-spacing: 0.02em
+    text-transform: uppercase
+    color: #A4A4A4
+    line-height: 0
+  &__value
+    font-family: 'Source Sans Pro', sans-serif
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    letter-spacing: 0.02em
+    text-transform: uppercase
+    line-height: 0
+    color: #505050
+    margin-left: 5px
+    transition: color 0.3s
+    &:hover
+      color: #FF5631
+    img
+      max-width: 26px
+      width: 26px
+      height: 26px
+      max-height: 26px
+      border-radius: 50%
+      border: 2px solid #ffffff
+      margin-left: 8px
+  &__login
+    display: flex
+    align-items: center
+    margin-left: auto
+    padding: 0 50px
+  &__login-title
+    font-family: 'Source Sans Pro', sans-serif
+    font-style: normal
+    font-weight: 500
+    font-size: 14px
+    letter-spacing: 0.02em
+    color: #333333
+  &__text-mark
+    color: #2B66FA
+  &__btn
+    font-family: 'Source Sans Pro', sans-serif
+    height: 30px
+    line-height: 30px
+    padding: 0 20px
+    font-style: normal
+    font-weight: 500
+    font-size: 14px
+    text-align: center
+    color: #FFFCFC
+    margin-left: 50px
+    background: #5596EE
+    box-shadow: 0 6px 16px rgba(85, 150, 238, 0.25)
+    border-radius: 3px
+
+
+  &__modal
+    display: flex
+    flex-direction: column
+    max-width: 450px
+    width: 100%
+    background: #FFFFFF
+    box-shadow: 0 4px 16px rgba(138, 138, 138, 0.25)
+    border-radius: 10px
+    padding: 30px
+    &-header
+      position: relative
+      display: flex
+      flex-wrap: wrap
+      align-items: center
+      margin-bottom: 30px
+    &-title
+      font-family: 'Source Sans Pro', sans-serif
+      font-style: normal
+      font-weight: 600
+      font-size: 15px
+      letter-spacing: 0.02em
+      color: #000000
+      width: 50%
+    //&-user-block
+    //  width: 50%
+    //  text-align: center
+    &-user-signed
+      display: block
+      font-family: 'Source Sans Pro', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      letter-spacing: 0.02em
+      color: #909090
+      text-decoration: none
+      text-align: center
+      width: 50%
+    &-user-mail
+      font-family: 'Source Sans Pro', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      letter-spacing: 0.02em
+      color: #333333
+      width: 100%
+      margin-top: 5px
+      text-align: right
+      padding-right: 30px
+    &-close-btn
+      position: absolute
+      top: -15px
+      right: -15px
+      height: 16px
+      width: 16px
+      padding: 0
+      background-color: transparent
+      border: none
+      box-shadow: none
+      &:before
+        position: absolute
+        top: 50%
+        left: 0
+        content: ''
+        height: 2px
+        border-radius: 1px
+        width: 100%
+        background-color: #000000
+        transform: rotate(45deg) translateY(-50%)
+      &:after
+        position: absolute
+        content: ''
+        top: 50%
+        left: 1px
+        height: 2px
+        border-radius: 1px
+        width: 100%
+        background-color: #000000
+        transform: rotate(-45deg) translateY(-50%)
+
+
+
+
+
