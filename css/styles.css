@@ -444,9 +444,9 @@ body {
               box-shadow: none;
       outline: none; }
     .wtg-toolbar__btn:hover svg path {
-      fill: #909090 !important; }
+      fill: #505050 !important; }
     .wtg-toolbar__btn.active svg path {
-      fill: #909090 !important; }
+      fill: #505050 !important; }
   .wtg-toolbar__icon {
     width: 24px; }
     .wtg-toolbar__icon path {
@@ -640,9 +640,9 @@ body {
     -webkit-box-shadow: none;
             box-shadow: none; }
     .wtg-toolbar-modal__close-btn:hover:before {
-      background-color: #909090; }
+      background-color: #000000; }
     .wtg-toolbar-modal__close-btn:hover:after {
-      background-color: #909090; }
+      background-color: #000000; }
     .wtg-toolbar-modal__close-btn:before {
       position: absolute;
       top: 50%;
@@ -651,7 +651,7 @@ body {
       height: 2px;
       border-radius: 1px;
       width: 100%;
-      background-color: #000000;
+      background-color: #909090;
       -webkit-transform: rotate(45deg) translateY(-50%);
               transform: rotate(45deg) translateY(-50%);
       -webkit-transition: background-color 0.2s;
@@ -664,7 +664,7 @@ body {
       height: 2px;
       border-radius: 1px;
       width: 100%;
-      background-color: #000000;
+      background-color: #909090;
       -webkit-transform: rotate(-45deg) translateY(-50%);
               transform: rotate(-45deg) translateY(-50%);
       -webkit-transition: background-color 0.2s;
