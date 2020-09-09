@@ -305,6 +305,9 @@ textarea {
   background-color: #FF4E4E;
   margin-left: 8px; }
 
+body {
+  font-family: "Montserrat", sans-serif; }
+
 .wtg-toolbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -312,7 +315,7 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 40px;
+  height: 36px;
   background: #FFFFFF;
   -webkit-box-shadow: 0 4px 16px rgba(138, 138, 138, 0.15);
           box-shadow: 0 4px 16px rgba(138, 138, 138, 0.15);
@@ -324,8 +327,7 @@ textarea {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 150px;
-    min-width: 150px; }
+    padding: 0 20px; }
     .wtg-toolbar__logo img {
       max-width: 50px;
       width: 100%; }
@@ -360,7 +362,7 @@ textarea {
     min-width: 140px;
     height: 100%;
     background: rgba(43, 102, 250, 0.3);
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -460,22 +462,20 @@ textarea {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    min-width: 70px;
-    max-width: 85px;
-    height: 40px;
+    min-width: 55px;
+    max-width: 60px;
+    height: 100%;
     width: 100%;
     border-right: 1px solid #DADCE0; }
     .wtg-toolbar__item:last-child {
       border-right: none; }
     .wtg-toolbar__item--server-response {
-      max-width: 125px;
-      min-width: 125px;
-      width: 125px;
+      max-width: 120px;
+      min-width: 120px;
       -ms-flex-pack: distribute;
-          justify-content: space-around;
-      padding: 0 10px; }
+          justify-content: space-around; }
       .wtg-toolbar__item--server-response .server-status {
-        font-family: "Source Sans Pro", sans-serif;
+        font-family: "Montserrat", sans-serif;
         font-style: normal;
         font-weight: 600;
         font-size: 14px;
@@ -492,7 +492,7 @@ textarea {
       max-width: 50px;
       min-width: auto; }
   .wtg-toolbar__state {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -501,7 +501,7 @@ textarea {
     color: #A4A4A4;
     line-height: 0; }
   .wtg-toolbar__value {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -509,7 +509,7 @@ textarea {
     text-transform: uppercase;
     line-height: 0;
     color: #505050;
-    margin-left: 5px;
+    margin-left: 3px;
     -webkit-transition: color 0.3s;
     transition: color 0.3s; }
     .wtg-toolbar__value:hover {
@@ -520,8 +520,7 @@ textarea {
       height: 26px;
       max-height: 26px;
       border-radius: 50%;
-      border: 2px solid #ffffff;
-      margin-left: 8px; }
+      border: 2px solid #ffffff; }
   .wtg-toolbar__login {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -532,7 +531,7 @@ textarea {
     margin-left: auto;
     padding: 0 50px; }
   .wtg-toolbar__login-title {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -541,7 +540,7 @@ textarea {
   .wtg-toolbar__text-mark {
     color: #2B66FA; }
   .wtg-toolbar__btn-login {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Montserrat", sans-serif;
     height: 30px;
     line-height: 30px;
     padding: 0 20px;
@@ -571,7 +570,7 @@ textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 450px;
+  max-width: 500px;
   width: 100%;
   background: #FFFFFF;
   -webkit-box-shadow: 0 4px 16px rgba(138, 138, 138, 0.25);
@@ -598,16 +597,16 @@ textarea {
             align-items: center;
     margin-bottom: 30px; }
   .wtg-toolbar-modal__title {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 16px;
     letter-spacing: 0.02em;
     color: #000000;
     width: 50%; }
   .wtg-toolbar-modal__user-signed {
     display: block;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -619,14 +618,14 @@ textarea {
     .wtg-toolbar-modal__user-signed:focus {
       outline: none; }
   .wtg-toolbar-modal__user-mail {
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     letter-spacing: 0.02em;
     color: #333333;
     width: 100%;
-    margin-top: 5px;
+    margin-top: 10px;
     text-align: right;
     padding-right: 30px; }
   .wtg-toolbar-modal__close-btn {
@@ -674,11 +673,11 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-bottom: 15px; }
+    margin-bottom: 30px; }
   .wtg-toolbar-modal__tab {
     position: relative;
     margin-right: 30px;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
@@ -723,10 +722,10 @@ textarea {
       .wtg-toolbar-modal__set-item:nth-child(2n - 1) label {
         margin-right: 10px; }
     .wtg-toolbar-modal__set-option {
-      font-family: "Source Sans Pro", sans-serif;
+      font-family: "Montserrat", sans-serif;
       font-style: normal;
       font-weight: 500;
-      font-size: 14px;
+      font-size: 15px;
       letter-spacing: 0.02em;
       color: #333333;
       -webkit-box-ordinal-group: 2;

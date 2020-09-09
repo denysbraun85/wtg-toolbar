@@ -31,19 +31,20 @@
   background-color: #FF4E4E
   margin-left: 8px
 
+body
+  font-family: 'Montserrat', sans-serif
 
 .wtg-toolbar
   display: flex
   align-items: center
-  height: 40px
+  height: 36px
   background: #FFFFFF
   box-shadow: 0 4px 16px rgba(138, 138, 138, 0.15)
   z-index: 2
   &__logo
     display: flex
     justify-content: center
-    width: 150px
-    min-width: 150px
+    padding: 0 20px
     img
       max-width: 50px
       width: 100%
@@ -66,7 +67,7 @@
     min-width: 140px
     height: 100%
     background: rgba(43, 102, 250, 0.3)
-    font-family: 'Source Sans Pro', sans-serif
+    font-family: 'Montserrat', sans-serif
     font-style: normal
     font-weight: 600
     font-size: 14px
@@ -149,21 +150,19 @@
     display: flex
     align-items: center
     justify-content: center
-    min-width: 70px
-    max-width: 85px
-    height: 40px
+    min-width: 55px
+    max-width: 60px
+    height: 100%
     width: 100%
     border-right: 1px solid #DADCE0
     &:last-child
       border-right: none
     &--server-response
-      max-width: 125px
-      min-width: 125px
-      width: 125px
+      max-width: 120px
+      min-width: 120px
       justify-content: space-around
-      padding: 0 10px
       .server-status
-        font-family: 'Source Sans Pro', sans-serif
+        font-family: 'Montserrat', sans-serif
         font-style: normal
         font-weight: 600
         font-size: 14px
@@ -180,7 +179,7 @@
       max-width: 50px
       min-width: auto
   &__state
-    font-family: 'Source Sans Pro', sans-serif
+    font-family: 'Montserrat', sans-serif
     font-style: normal
     font-weight: 600
     font-size: 14px
@@ -189,7 +188,7 @@
     color: #A4A4A4
     line-height: 0
   &__value
-    font-family: 'Source Sans Pro', sans-serif
+    font-family: 'Montserrat', sans-serif
     font-style: normal
     font-weight: 600
     font-size: 14px
@@ -197,7 +196,7 @@
     text-transform: uppercase
     line-height: 0
     color: #505050
-    margin-left: 5px
+    margin-left: 3px
     transition: color 0.3s
     &:hover
       color: #FF5631
@@ -208,14 +207,13 @@
       max-height: 26px
       border-radius: 50%
       border: 2px solid #ffffff
-      margin-left: 8px
   &__login
     display: flex
     align-items: center
     margin-left: auto
     padding: 0 50px
   &__login-title
-    font-family: 'Source Sans Pro', sans-serif
+    font-family: 'Montserrat', sans-serif
     font-style: normal
     font-weight: 500
     font-size: 14px
@@ -224,7 +222,7 @@
   &__text-mark
     color: #2B66FA
   &__btn-login
-    font-family: 'Source Sans Pro', sans-serif
+    font-family: 'Montserrat', sans-serif
     height: 30px
     line-height: 30px
     padding: 0 20px
@@ -250,7 +248,7 @@
   top: 0
   display: none
   flex-direction: column
-  max-width: 450px
+  max-width: 500px
   width: 100%
   background: #FFFFFF
   box-shadow: 0 4px 16px rgba(138, 138, 138, 0.25)
@@ -268,16 +266,16 @@
     align-items: center
     margin-bottom: 30px
   &__title
-    font-family: 'Source Sans Pro', sans-serif
+    font-family: 'Montserrat', sans-serif
     font-style: normal
     font-weight: 600
-    font-size: 15px
+    font-size: 16px
     letter-spacing: 0.02em
     color: #000000
     width: 50%
   &__user-signed
     display: block
-    font-family: 'Source Sans Pro', sans-serif
+    font-family: 'Montserrat', sans-serif
     font-style: normal
     font-weight: normal
     font-size: 12px
@@ -289,14 +287,14 @@
     &:focus
       outline: none
   &__user-mail
-    font-family: 'Source Sans Pro', sans-serif
+    font-family: 'Montserrat', sans-serif
     font-style: normal
     font-weight: normal
     font-size: 14px
     letter-spacing: 0.02em
     color: #333333
     width: 100%
-    margin-top: 5px
+    margin-top: 10px
     text-align: right
     padding-right: 30px
   &__close-btn
@@ -340,11 +338,11 @@
   //Tabs
   &__tabs
     display: flex
-    margin-bottom: 15px
+    margin-bottom: 30px
   &__tab
     position: relative
     margin-right: 30px
-    font-family: 'Source Sans Pro', sans-serif
+    font-family: 'Montserrat', sans-serif
     font-style: normal
     font-weight: 600
     font-size: 14px
@@ -383,10 +381,10 @@
         label
           margin-right: 10px
     &-option
-      font-family: 'Source Sans Pro', sans-serif
+      font-family: 'Montserrat', sans-serif
       font-style: normal
       font-weight: 500
-      font-size: 14px
+      font-size: 15px
       letter-spacing: 0.02em
       color: #333333
       order: 1
