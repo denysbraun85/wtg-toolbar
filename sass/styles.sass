@@ -40,7 +40,7 @@ body
   height: 36px
   background: #FFFFFF
   box-shadow: 0 4px 16px rgba(138, 138, 138, 0.15)
-  z-index: 2
+  z-index: 1002
   &__logo
     display: flex
     justify-content: center
@@ -244,7 +244,7 @@ body
 //Modal
 .wtg-toolbar-modal
   position: absolute
-  right: 50px
+  right: 2px
   top: 0
   display: none
   flex-direction: column
@@ -254,7 +254,7 @@ body
   box-shadow: 0 4px 16px rgba(138, 138, 138, 0.25)
   border-radius: 10px
   padding: 30px
-  z-index: -1
+  z-index: 1000
   opacity: 0
   transform: translate(0, 0)
   transition: transform 0.2s, opacity 0.2s
@@ -436,6 +436,6 @@ body
   //Open modal
   &.open
     opacity: 1
-    transform: translate(0, 40px)
+    transform: translate(0, 36px)
     transition: transform 0.2s, opacity 0.2s
 

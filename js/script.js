@@ -47,11 +47,18 @@ document.addEventListener('click', (e) => closeModalOutside(e));
 
 //Func
 const openModal = (modal, button) => {
-    modal.style.display = 'flex';
-    setTimeout( () => {
-        modal.classList.add('open');
-        button.classList.add('active');
-    }, 100)
+
+    if (button.classList.contains('active')) {
+        closeModal(modal, setBtn)
+    } else {
+        modal.style.display = 'flex';
+        setTimeout( () => {
+            modal.classList.add('open');
+            button.classList.add('active');
+        }, 100)
+    }
+
+
 }
 const closeModal = (modal, button) => {
     modal.classList.remove('open');
@@ -65,3 +72,8 @@ const closeModalOutside = (e) => {
         closeModal(modal, setBtn);
     }
 }
+
+
+
+
+

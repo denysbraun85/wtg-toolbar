@@ -319,7 +319,7 @@ body {
   background: #FFFFFF;
   -webkit-box-shadow: 0 4px 16px rgba(138, 138, 138, 0.15);
           box-shadow: 0 4px 16px rgba(138, 138, 138, 0.15);
-  z-index: 2; }
+  z-index: 1002; }
   .wtg-toolbar__logo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -563,7 +563,7 @@ body {
 
 .wtg-toolbar-modal {
   position: absolute;
-  right: 50px;
+  right: 2px;
   top: 0;
   display: none;
   -webkit-box-orient: vertical;
@@ -577,7 +577,7 @@ body {
           box-shadow: 0 4px 16px rgba(138, 138, 138, 0.25);
   border-radius: 10px;
   padding: 30px;
-  z-index: -1;
+  z-index: 1000;
   opacity: 0;
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
@@ -792,8 +792,8 @@ body {
         transition: background-color 0.2s, box-shadow 0.2s, transform 0.2s, -webkit-box-shadow 0.2s, -webkit-transform 0.2s; }
   .wtg-toolbar-modal.open {
     opacity: 1;
-    -webkit-transform: translate(0, 40px);
-            transform: translate(0, 40px);
+    -webkit-transform: translate(0, 36px);
+            transform: translate(0, 36px);
     -webkit-transition: opacity 0.2s, -webkit-transform 0.2s;
     transition: opacity 0.2s, -webkit-transform 0.2s;
     transition: transform 0.2s, opacity 0.2s;
