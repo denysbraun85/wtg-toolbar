@@ -448,9 +448,9 @@ body {
       -webkit-box-shadow: none;
               box-shadow: none;
       outline: none; }
-    .wtg-toolbar__btn:hover svg path {
+    .wtg-toolbar__btn:hover svg path, .wtg-toolbar__btn:hover .wtg-toolbar__icon path {
       fill: #505050 !important; }
-    .wtg-toolbar__btn.active svg path {
+    .wtg-toolbar__btn.active svg path, .wtg-toolbar__btn.active .wtg-toolbar__icon path {
       fill: #505050 !important; }
   .wtg-toolbar__icon {
     width: 24px; }
@@ -567,7 +567,7 @@ body {
       outline: none; }
 
 .wtg-toolbar-modal {
-  position: absolute;
+  position: fixed;
   right: 2px;
   top: 0;
   display: none;
@@ -622,6 +622,8 @@ body {
     width: 50%; }
     .wtg-toolbar-modal__user-signed:focus {
       outline: none; }
+    .wtg-toolbar-modal__user-signed:hover {
+      text-decoration: none; }
   .wtg-toolbar-modal__user-mail {
     font-family: "Montserrat", sans-serif;
     font-style: normal;

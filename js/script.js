@@ -1,13 +1,47 @@
 //Preloader
-window.addEventListener('load', () => {
+// window.addEventListener('DOMContentLoaded', () => {
+//     alert('yes');
+//
+//
+//
+// })
 
-    let optionBlocks = [...document.querySelectorAll('.js-wtg-toolbar__option-block')];
+let optionBlocks = [...document.querySelectorAll('.js-wtg-toolbar__option-block')],
+    imageCounter = 0;
 
-    optionBlocks.forEach( el => {
-        el.classList.remove('preloader');
+optionBlocks.forEach( el => {
+
+    let images = el.querySelectorAll('img'),
+        imagesLen = images.length;
+
+    images.forEach( elem => {
+
+
+
+        if (elem.complite) {
+            console.log(elem);
+        }
+        //
+        // elem.addEventListener('load', () => {
+        //     imageCounter ++;
+        //     console.log(elem);
+        //     console.log(imageCounter);
+        // });
+        // if (imageCounter === imagesLen) {
+        //     el.classList.remove('preloader');
+        //
+        // }
     })
 
+    // console.log(imagesLen);
+
+    // console.log(imageCounter);
+
+    // el.classList.remove('preloader');
+    // console.log(el);
 })
+
+// console.log(imageCounter);
 
 //Tabs
 

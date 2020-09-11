@@ -34,6 +34,7 @@
 body
   font-family: 'Montserrat', sans-serif
 
+//Toolbar
 .wtg-toolbar
   position: fixed
   width: 100%
@@ -139,12 +140,12 @@ body
       box-shadow: none
       outline: none
     &:hover
-      svg
+      svg, .wtg-toolbar__icon
         path
           fill: #505050 !important
     //Action
     &.active
-      svg
+      svg, .wtg-toolbar__icon
         path
           fill: #505050 !important
   &__icon
@@ -248,7 +249,7 @@ body
 
 //Modal
 .wtg-toolbar-modal
-  position: absolute
+  position: fixed
   right: 2px
   top: 0
   display: none
@@ -291,6 +292,8 @@ body
     width: 50%
     &:focus
       outline: none
+    &:hover
+      text-decoration: none
   &__user-mail
     font-family: 'Montserrat', sans-serif
     font-style: normal
