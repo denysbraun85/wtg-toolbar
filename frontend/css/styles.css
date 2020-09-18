@@ -345,13 +345,11 @@ body {
   .wtg-toolbar__link-building-block {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    width: 50%; }
+    display: flex; }
   .wtg-toolbar__developers-block {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    width: 50%; }
+    display: flex; }
   .wtg-toolbar__label {
     position: relative;
     display: -webkit-box;
@@ -373,6 +371,7 @@ body {
     font-size: 14px;
     letter-spacing: 0.02em;
     text-transform: uppercase;
+    margin-right: 7px;
     color: #FFFFFF;
     z-index: 3; }
     .wtg-toolbar__label:before {
@@ -453,7 +452,8 @@ body {
     .wtg-toolbar__btn.active svg path, .wtg-toolbar__btn.active .wtg-toolbar__icon path {
       fill: #505050 !important; }
   .wtg-toolbar__icon {
-    width: 24px; }
+    width: 24px;
+    height: 18px; }
     .wtg-toolbar__icon path {
       -webkit-transition: fill 0.2s;
       transition: fill 0.2s; }
@@ -500,7 +500,7 @@ body {
   .wtg-toolbar__state {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
     text-transform: uppercase;
@@ -730,12 +730,13 @@ body {
       .wtg-toolbar-modal__set-item:nth-child(2n - 1) label {
         margin-right: 10px; }
       .wtg-toolbar-modal__set-item.main-switch span {
-        font-weight: 600; }
+        font-weight: 600;
+        font-size: 16px; }
     .wtg-toolbar-modal__set-option {
       font-family: "Montserrat", sans-serif;
       font-style: normal;
       font-weight: 500;
-      font-size: 15px;
+      font-size: 14px;
       letter-spacing: 0.02em;
       color: #333333;
       -webkit-box-ordinal-group: 2;
