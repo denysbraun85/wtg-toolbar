@@ -1,4 +1,4 @@
-@import reset
+//@import reset
 
 .bg-green
   width: 14px
@@ -137,10 +137,12 @@ body
     box-shadow: none
     outline: none
     background-color: transparent
+    cursor: pointer
     &:focus
       box-shadow: none
       outline: none
     &:hover
+      background-color: transparent !important
       svg, .wtg-toolbar__icon
         path
           fill: #505050 !important
@@ -165,8 +167,6 @@ body
     &:last-child
       border-right: none
     &--server-response
-      max-width: 120px
-      min-width: 120px
       justify-content: space-around
       .server-status
         font-family: 'Montserrat', sans-serif
@@ -178,6 +178,8 @@ body
         color: #FFFFFF
         padding: 3px 5px
         border-radius: 2px
+        line-height: 1.2
+        margin: 0 3px
         &.ok
           background: #05DAB6
         &.error
@@ -260,7 +262,7 @@ body
   background: #FFFFFF
   box-shadow: 0 4px 16px rgba(138, 138, 138, 0.25)
   border-radius: 10px
-  padding: 30px
+  //padding: 30px
   z-index: 1000
   opacity: 0
   transform: translate(0, 0)
@@ -271,7 +273,8 @@ body
     display: flex
     flex-wrap: wrap
     align-items: center
-    margin-bottom: 30px
+    margin-bottom: 20px
+    padding: 30px 30px 0 30px
   &__title
     font-family: 'Montserrat', sans-serif
     font-style: normal
@@ -280,8 +283,11 @@ body
     letter-spacing: 0.02em
     color: #000000
     width: 50%
+    margin: 0
   &__user-signed
-    display: block
+    display: flex
+    align-items: center
+    justify-content: center
     font-family: 'Montserrat', sans-serif
     font-style: normal
     font-weight: normal
@@ -295,6 +301,8 @@ body
       outline: none
     &:hover
       text-decoration: none
+    img
+      margin-left: 5px
   &__user-mail
     font-family: 'Montserrat', sans-serif
     font-style: normal
@@ -303,24 +311,29 @@ body
     letter-spacing: 0.02em
     color: #333333
     width: 100%
-    margin-top: 10px
+    margin: 10px 0 0 0
     text-align: right
     padding-right: 30px
   &__close-btn
     position: absolute
-    top: -15px
-    right: -15px
+    top: 15px
+    right: 15px
     height: 16px
     width: 16px
     padding: 0
     background-color: transparent
     border: none
     box-shadow: none
+    outline: none
+    cursor: pointer
     &:hover
       &:before
         background-color: #000000
       &:after
         background-color: #000000
+    &:focus
+      box-shadow: none
+      outline: none
     &:before
       position: absolute
       top: 50%
@@ -347,7 +360,10 @@ body
   //Tabs
   &__tabs
     display: flex
-    margin-bottom: 30px
+    margin: 0 0 20px 0
+    list-style: none
+    padding: 12px 30px
+    background-color: #F5F5F5
   &__tab
     position: relative
     margin-right: 30px
@@ -358,6 +374,7 @@ body
     letter-spacing: 0.02em
     color: #C4C4C4
     cursor: pointer
+    line-height: 1.2
     &:before
       position: absolute
       bottom: -4px
@@ -372,11 +389,14 @@ body
   //Tab Content
   &__tab-content
     display: none
+    padding: 0 30px 15px 30px
     &.active
       display: block
   &__set
     display: flex
     flex-wrap: wrap
+    padding: 0
+    margin: 0
     &-item
       display: flex
       align-items: center
