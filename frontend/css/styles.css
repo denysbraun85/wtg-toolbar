@@ -266,6 +266,7 @@ body {
         -ms-flex-align: center;
             align-items: center;
     margin-left: auto;
+    height: 100%;
     padding: 0 50px; }
   .wtg-toolbar__login-title {
     font-family: "Montserrat", sans-serif;
@@ -273,7 +274,8 @@ body {
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
-    color: #333333; }
+    color: #333333;
+    margin: 0; }
   .wtg-toolbar__text-mark {
     color: #2B66FA; }
   .wtg-toolbar__btn-login {
